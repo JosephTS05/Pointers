@@ -10,6 +10,15 @@ int main() {
     cout << "Value of i: " << i << endl;
     cout << "Address of i: " << &i << endl;
     cout << "Value of iptr: " << iptr << endl;
+
+    //How does const work with ptr variables?
+    const int* ciptr = &i;; //Pointer to a const int, we cannot modify it
+    // *ciptr = 20; //illegal
+    //lets say we want to make the ptr variable itself
+    int* const ciptr2 = &i; // const pointer to an int,
+    *ciptr2 = 20;
+    //ciptr2 = &j; // the ptr is const
+    
     // iptr=25; illegal to assign an int to a pointer variable
     cout << "Value of variable that iptr points to: " << *iptr << endl;
     *iptr = 15; // change the value of i through the pointer
