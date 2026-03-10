@@ -24,6 +24,17 @@ void print_array(int* arr, size_t size) {
     }
     cout << endl;
 }
+
+//PROVIDED IN CLASS//
+// this function prints the elements of an array
+// [] dereferences the pointer
+void print_array(int arr[10], size_t size) {
+    for (int num: arr) {
+        cout << num << " ";
+    }
+}
+//NEVER ACCEPT PARAMETERS WITH BRACKETS, ONLY ACCEPT INT*s
+
 int main() {
     int arr[]{10, 20, 30, 40, 50};  
     cout << "size of arr in main function: " << sizeof(arr) << endl;
