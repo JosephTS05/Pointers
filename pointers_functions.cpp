@@ -9,10 +9,17 @@
 
 using namespace std;
 
-void swap(int* p1, int* p2) {
-    int temp = *p1;
-    *p1=*p2;
-    *p2=temp;
+//ADDED NOTE
+void swap_ref (int &r1, int &r2) {
+   int temp = r1;
+   r1 = r2;
+   r2 = temps;
+}
+
+void swap(int* p1, int* p2) { //constantly derefrencing 
+    int temp = *p1; //temp = contents of p1
+    *p1=*p2; //p1 = contents of p2
+    *p2=temp; //p2 = contents of temp
 }
 
 // this function modifies the value that iptr points to
