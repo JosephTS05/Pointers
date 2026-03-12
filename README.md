@@ -7,3 +7,5 @@ implicit conversion of an array type (T[N]) into a pointer to its first element 
 This mechanism causes the loss of the array’s size and dimension information, 
 reducing the array to a simple pointer holding the memory address of the first item. 
 
+***Pointer Arithmetic
+You can take a point and 
