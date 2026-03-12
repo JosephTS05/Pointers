@@ -1,6 +1,7 @@
 ***NOTES***
 
 ****Decaying to regular pointer
+
 In C++, decaying to a regular pointer refers to the automatic, 
 implicit conversion of an array type (T[N]) into a pointer to its first element (T*). 
 This mechanism causes the loss of the array’s size and dimension information, 
