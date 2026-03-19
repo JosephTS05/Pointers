@@ -20,20 +20,25 @@ void print_cstring(const char* str)
     }
     cout << endl;
     // 3
+    //***AT THE END OF EACH STRING THERE'S A '\0' THAT INDICATES THE END OF A STRING
+    //***A STRING WITHOUT '\0' IS DANGEROUS AS IT CAN LEAD TO strlen() COUNTING OUT OF BOUNDS OF THE STRING
     for (size_t i = 0; i < strlen(str); i++)
     {
         cout << str[i];
     }
     cout << endl;
+    
     // 4 use pointer notation
     for (const char* ptr = str; *ptr != '\0'; ptr++)
     {
         cout << *ptr;
     }
     cout << endl;
+    
     // 5 identical to 4
+    //*****THIS MOVES ptr AND str THROUGH THE STRING UNTIL IT REACHES '\0'
     const char* ptr = str;
-    while(*ptr)
+    while(*ptr) //**THIS IS EQUAL TO 'WHILE PTR != 0'
     {
         cout << *ptr;
         ptr++;
